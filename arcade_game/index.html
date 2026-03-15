@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Arcade Game - Pixel Quest</title>
+    <link rel="stylesheet" href="arcade_style.css">
+</head>
+<body>
+    <div class="arcade-container">
+        <!-- Arcade Cabinet Header -->
+        <div class="arcade-header">
+            <h1 class="arcade-title">PIXEL QUEST</h1>
+            <p class="arcade-subtitle">A Classic Arcade Adventure</p>
+        </div>
+
+        <!-- Game Screen -->
+        <div class="arcade-screen">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+
+        <!-- Score Display -->
+        <div class="score-display">
+            <div class="score-item">
+                <span class="score-label">SCORE</span>
+                <span class="score-value" id="score">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">LEVEL</span>
+                <span class="score-value" id="level">1</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">LIVES</span>
+                <span class="score-value" id="lives">3</span>
+            </div>
+        </div>
+
+        <!-- Game Status -->
+        <div class="game-status" id="gameStatus">
+            <p id="statusText">Press SPACE to Start</p>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="control-section">
+                <h3>CONTROLS</h3>
+                <p>Arrow Keys or WASD - Move</p>
+                <p>SPACE - Start/Pause</p>
+                <p>R - Restart Game</p>
+            </div>
+            <div class="control-section">
+                <h3>HOW TO PLAY</h3>
+                <p>🟡 Collect all dots to advance</p>
+                <p>👻 Avoid ghosts!</p>
+                <p>⭐ Grab power-ups for points</p>
+            </div>
+        </div>
+
+        <!-- High Score -->
+        <div class="high-score">
+            <span>HIGH SCORE: <span id="highScore">0</span></span>
+        </div>
+    </div>
+
+    <script src="arcade_game.js"></script>
+</body>
+</html>
