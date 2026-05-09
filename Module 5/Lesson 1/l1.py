@@ -4,6 +4,7 @@ from PIL import Image
 from config import HF_API_KEY
 
 MODELS = [
+    "skyslayer/sdl",
     "ByteDance/SDXL-Lightning",
     "stabilityai/stable-diffusion-xl-base-1.0",
     "stabilityai/sdxl-turbo",
